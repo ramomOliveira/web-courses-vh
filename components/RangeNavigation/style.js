@@ -57,6 +57,7 @@ export const CardsNavigation = styled.div`
       color: var(--tertiary);
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
+      cursor: pointer;
     }
   }
 `;
