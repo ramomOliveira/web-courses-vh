@@ -30,6 +30,7 @@
         "max-len": "off",
         "import/no-unresolved": "off",
         "import/extensions": "off",
-        "react/require-default-props": "off"
+        "react/require-default-props": "off",
+        "no-unused-vars": "off"
     }
 }
