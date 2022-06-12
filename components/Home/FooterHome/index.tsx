@@ -79,7 +79,7 @@ export default function FooterHome() {
           {courses.map((item) => (
 
             <p key={item.id}>
-              <div />
+              <span />
               {item.name}
             </p>
 

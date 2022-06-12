@@ -48,7 +48,7 @@ export const WrapperCourses = styled.div`
     align-items: center;
     gap: 8px;
 
-    > div {
+    > span {
       width: 15px;
       height: 4px;
       background-color: var(--black);

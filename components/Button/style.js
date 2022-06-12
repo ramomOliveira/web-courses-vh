@@ -12,6 +12,7 @@ export const Container = styled.button`
   color: var(--white);
   display: flex;
   width: max-content;
+  height: min-content;
   padding: 18px;
   border-radius: 8px;
   font-weight: 600;
