@@ -10,12 +10,12 @@ export default function HeaderHome() {
       <AsideLeft>
         <TitleHome />
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. In labore animi expedita repellendus, similique ea voluptatibus perferendis facere. Molestiae quam non magnam consectetur aliquid debitis dolorum laborum voluptatum dolorem omnis.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus molestias, fugit facilis voluptatum optio beatae doloremque earum voluptatem possimus. Nobis hic exercitationem illum! Cum ab ut tenetur vitae ex corrupti?
+          Mussum Ipsum, cacilds vidis litro abertis. Per aumento de cachacis, eu reclamis. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Suco de cevadiss deixa as pessoas mais interessantis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per.
+          Mé faiz elementum girarzis, nisi eros vermeio. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Nec orci ornare consequat.
         </p>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus neque quis eius voluptatem atque nostrum. Incidunt voluptatum sunt cupiditate quo laborum? Sequi alias voluptatibus omnis nobis obcaecati nisi amet provident?
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi beatae incidunt expedita sequi vitae quo unde perferendis, quidem, nulla laudantium saepe facere velit maiores sed labore qui cum. Asperiores, eius.
+          Mussum Ipsum, cacilds vidis litro abertis. Per aumento de cachacis, eu reclamis. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Suco de cevadiss deixa as pessoas mais interessantis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per.
+
         </p>
 
         <WrapperButton>
