@@ -1,16 +1,20 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import FooterHome from '../components/Home/FooterHome';
+
+import HeaderHome from '../components/Home/HeaderHome';
+import { Container } from '../styles/home/style';
 
 const Home: NextPage = () => (
-  <div>
+  <>
     <Head>
       <title>Create Next App</title>
-
     </Head>
-
-    <h1>ola mundo</h1>
-
-  </div>
+    <Container>
+      <HeaderHome />
+      <FooterHome />
+    </Container>
+  </>
 );
 
 export default Home;
