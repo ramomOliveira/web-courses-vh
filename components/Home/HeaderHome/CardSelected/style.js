@@ -12,12 +12,12 @@ export const WrapperCard = styled.div`
   > div {
     border-radius: 8px;
     box-shadow: 0px 3px 6px #2121214d;
-    width: 150px;
-    height: 100px;
+    width: 130px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 16px;
     color: var(--primary);
 
     @media (min-width: 768px) {
