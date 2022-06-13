@@ -9,7 +9,7 @@ export const Container = styled.div`
 
 export const WrapperTop = styled.div`
   background-color: var(--primary);
-  padding: 10px 60px;
+  padding: 10px 30px;
   color: var(--white);
   font-weight: 600;
   font-size: 14px;
@@ -19,19 +19,37 @@ export const WrapperTop = styled.div`
     justify-content: space-around;
 
     > div {
-      display: flex;
-      gap: 10px;
+      display: none;
     }
+  }
 
-    li {
-      &:hover {
+  @media (min-width: 768px) {
+    padding: 10px 60px;
+
+    > ul {
+      > div {
+        display: flex;
+        gap: 10px;
+      }
+      > span {
+        display: none;
+      }
+    }
+  }
+
+`;
+
+export const Li = styled.li`
+  display: ${(props) => (props.dNone ? 'none' : 'flex')};
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+
+  &:hover {
     text-decoration: underline;
     cursor: pointer;
   }
-    }
-  }
-
-  
 `;
 
 export const WrapperBottom = styled.div`
@@ -46,11 +64,17 @@ export const WrapperBottom = styled.div`
     align-items: center;
 
     > img {
-      width: 200px;
+      width: 100px;
+    }
+
+    @media (min-width: 768px) {
+      > img {
+        width: 200px;
+      }
     }
 
     > ul {
-      display: flex;
+      display: none;
       gap: 50px;
       font-size: 20px;
       font-weight: 600;
@@ -60,7 +84,11 @@ export const WrapperBottom = styled.div`
         &:hover {
         filter: brightness(0.7);
         cursor: pointer;
+        }
       }
+
+      @media (min-width: 768px) {
+        display: flex;
       }
      
     }

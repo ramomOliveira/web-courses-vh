@@ -23,13 +23,16 @@ export const Container = styled.button`
   display: flex;
   width: max-content;
   height: min-content;
-  padding: 18px;
+  padding: 10px;
   border-radius: 8px;
   font-weight: 600;
   font-size: 16px;
 
   &:hover {
     filter: brightness(1.1);
-    
+  }
+
+  @media (min-width: 768px) {
+    padding: 18px;
   }
 `;
