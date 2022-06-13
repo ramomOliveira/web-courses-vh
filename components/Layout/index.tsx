@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
 import Header from '../Header';
+import Footer from '../Footer';
 import RangeNavigation from '../RangeNavigation';
 
 interface LayoutProps {
@@ -14,9 +15,7 @@ export default function Layout({ children }: LayoutProps) {
       <div>
         {children}
       </div>
-      <div>
-        footer
-      </div>
+      <Footer />
     </div>
   );
 }

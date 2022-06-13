@@ -21,13 +21,18 @@ export const Navigation = styled.div`
     > li {
       display: flex;
       align-items: center;
+      font-weight: 400;
 
       &:hover {
         text-decoration: underline;
         cursor: pointer;
       }
 
-      font-weight: ${(props) => (props.selected ? '900' : '400')};
+      
+
+      &.selected {
+        font-weight: 900;
+      }
     }
   }
 `;
@@ -58,6 +63,13 @@ export const CardsNavigation = styled.div`
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
       cursor: pointer;
+    }
+
+    &.selected {
+      background-color: var(--primary);
+      color: var(--tertiary);
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
     }
   }
 `;

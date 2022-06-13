@@ -97,11 +97,23 @@ export default function RangeCarousel({ titleRangeCarousel }: { titleRangeCarous
       <div>
         <Swiper
           modules={[Navigation]}
-          spaceBetween={10}
-          slidesPerView={3}
+          spaceBetween={80}
           navigation
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log('slide change')}
+          breakpoints={{
+            // when window width is >= 640px
+            640: {
+              width: 640,
+              slidesPerView: 1,
+            },
+            // when window width is >= 768px
+            768: {
+              width: 768,
+              slidesPerView: 2,
+            },
+          }}
+
         >
           {courses.map((item) => (
             <SwiperSlide key={item.id}>

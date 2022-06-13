@@ -14,7 +14,7 @@ export const Container = styled.div`
 
 export const AsideImg = styled.div`
   background-image: url("/images/person-studying.svg");
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   width: 350px;

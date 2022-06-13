@@ -25,7 +25,7 @@ export const AsideRight = styled.aside`
   width: 100%;
   
   background-image: url("/images/cover.png");
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 `;

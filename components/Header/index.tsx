@@ -19,7 +19,7 @@ export default function Header() {
       </WrapperTop>
       <WrapperBottom>
         <div>
-          <img src="" alt="Sua Logo" />
+          <img src="/images/logo.png" alt="Sua Logo" />
           <ul>
             <li>A Empresa</li>
             <li>Cursos</li>

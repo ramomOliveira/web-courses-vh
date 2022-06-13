@@ -9,7 +9,7 @@ export const Container = styled.div`
 
 export const WrapperTop = styled.div`
   background-color: var(--primary);
-  padding: 8px 60px;
+  padding: 10px 60px;
   color: var(--white);
   font-weight: 600;
   font-size: 14px;
@@ -38,12 +38,16 @@ export const WrapperBottom = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 60px;
+  padding: 5px 60px;
 
   > div {
     display: flex;
     gap: 70px;
     align-items: center;
+
+    > img {
+      width: 200px;
+    }
 
     > ul {
       display: flex;
