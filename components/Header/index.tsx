@@ -1,22 +1,26 @@
 import Button from '../Button';
-import { Container, WrapperTop, WrapperBottom } from './style';
+import {
+  Container, WrapperTop, WrapperBottom, Li,
+} from './style';
 
 export default function Header() {
   return (
     <Container>
       <WrapperTop>
         <ul>
-          <li>Fale com a gente</li>
+          <Li dNone>Fale com a gente</Li>
           <div>
             <li>0800 000 0000</li>
             <span>|</span>
             <li>0000-0000</li>
           </div>
-          <li>Inscreva-se via WhatsApp</li>
-          <li>Acompanha sua matrícula</li>
-          <li>Área do aluno</li>
+          <Li>Inscreva-se via WhatsApp</Li>
+          <span>|</span>
+          <Li>Acompanha sua matrícula</Li>
+          <Li dNone>Área do aluno</Li>
         </ul>
       </WrapperTop>
+
       <WrapperBottom>
         <div>
           <img src="/images/logo.png" alt="Sua Logo" />

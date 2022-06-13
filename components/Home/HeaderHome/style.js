@@ -32,9 +32,15 @@ export const WrapperButton = styled.div`
 
 export const AsideRight = styled.aside`
   width: 100%;
+  height: 400px;
   
   background-image: url("/images/cover.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+
+  @media (min-width: 768px) {
+    width: 100%;
+    height: 100%;
+  }
 `;

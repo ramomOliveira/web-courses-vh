@@ -5,14 +5,14 @@ export const Container = styled.div`
 
   > div {
     background-image: ${(props) => `url(${props.image})`} ;
-    width: 400px;
+    width: 100%;
     height: 280px;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     background-color: black;
     border-radius: 8px;
-    padding: 10px;
+    padding: 5px;
     > p {
       color: var(--white);
       font-size: 14px;
@@ -24,8 +24,23 @@ export const Container = styled.div`
   }
 
   > h2 {
-    font-size: 18px;
+    font-size: 15px;
     color: var(--white);
-    margin-top: 20px;
+    margin-top: 10px;
+  }
+
+  @media (min-width: 768px) {
+
+    > div { 
+      width: 400px;
+      height: 280px;
+      padding: 10px;
+    }
+    > h2 {
+      font-size: 18px;
+      color: var(--white);
+      margin-top: 20px;
+    }
+
   }
 `;

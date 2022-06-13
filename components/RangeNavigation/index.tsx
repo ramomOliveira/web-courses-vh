@@ -30,7 +30,9 @@ export default function RangeNavigation({ titlePage }: IProps) {
           <li className="selected">{titlePage}</li>
         </ul>
       </Navigation>
+
       <h1>{titlePage}</h1>
+
       <CardsNavigation>
         <div onClick={() => setSelected(0)} className={selected === 0 ? 'selected' : ''}>
           <span className="material-icons-outlined">
