@@ -6,18 +6,7 @@ export const Container = styled.div`
   padding: 0px 20px;
   max-width: 100%;
 
-  @media (min-width: 768px) {
-    max-width: 300px;
-    background-color: ${(props) => (props.hasBackground ? 'var(--tertiary)' : 'transparent')};
-    padding: 48px 20px;
-    
-    > h2 {
-      color: ${(props) => (props.hasBackground ? 'var(--black)' : 'var(--tertiary)')};
-      font-size: 25px;
-      margin-bottom: 20px;
-      margin-top: 80px;
-    }
-  }
+  
 
   > img {
     width: 100px;
@@ -49,6 +38,19 @@ export const Container = styled.div`
       @media (min-width: 768px) {
         font-size: 18px;
       }
+    }
+  }
+
+  @media (min-width: 768px) {
+    max-width: 300px;
+    background-color: ${(props) => (props.hasBackground ? 'var(--tertiary)' : 'transparent')};
+    padding: 48px 20px;
+    
+    > h2 {
+      color: ${(props) => (props.hasBackground ? 'var(--black)' : 'var(--tertiary)')};
+      font-size: 25px;
+      margin-bottom: 20px;
+      margin-top: 80px;
     }
   }
   
