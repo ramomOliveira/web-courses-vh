@@ -18,9 +18,9 @@ const listCarouselGraduate = [
 
 ];
 
-export default function UniversityGraduate() {
+export default function UniversityPostGraduate() {
   return (
-    <Layout titlePage="Graduação">
+    <Layout titlePage="Pós-Graduação">
       <Container>
         {listCarouselGraduate.map((item) => (
           <RangeCarousel key={item.id} titleRangeCarousel={item.title} />

@@ -7,7 +7,7 @@ export const Container = styled.div`
     background-image: ${(props) => `url(${props.image})`} ;
     width: 400px;
     height: 280px;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     background-color: black;

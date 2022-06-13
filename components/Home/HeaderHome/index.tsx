@@ -1,16 +1,38 @@
+import { useState } from 'react';
 import { useRouter } from 'next/router';
 import TitleHome from '../TitleHome';
 import Button from '../../Button';
 import {
   Container, AsideLeft, AsideRight, WrapperButton,
 } from './style';
+import Modal from '../../Modal';
+import CardSelected from './CardSelected';
 
 export default function HeaderHome() {
+  const [showSelectGraduate, setShowSelectGraduate] = useState(false);
+
+  const [numberSelected, setNumberSelected] = useState(0);
+
   const router = useRouter();
 
-  const handleRegister = () => {
-    router.push('/cursos/graduacao');
+  const handleRegister = (event: string) => {
+    if (event === 'Graduação') {
+      setNumberSelected(1);
+      // router.push('/cursos/graduacao');
+    } else {
+      setNumberSelected(2);
+      // router.push('/cursos/pos-graduacao');
+    }
   };
+
+  const onToSave = () => {
+    if (numberSelected === 1) {
+      router.push('/cursos/graduacao');
+    } else {
+      router.push('/cursos/pos-graduacao');
+    }
+  };
+
   return (
     <Container>
       <AsideLeft>
@@ -24,12 +46,30 @@ export default function HeaderHome() {
         </p>
 
         <WrapperButton>
-          <Button onClick={handleRegister}>Quero fazer minha matricula</Button>
-          <Button disabled>Baixar edital</Button>
+          <Button onClick={() => setShowSelectGraduate(true)}>Quero fazer minha matricula</Button>
+          <Button download>Baixar edital</Button>
 
         </WrapperButton>
       </AsideLeft>
       <AsideRight />
+      {showSelectGraduate && (
+        <Modal
+          title="Escolha a Formação"
+          show={showSelectGraduate}
+          onClose={() => {
+            setShowSelectGraduate(false);
+            setNumberSelected(0);
+          }}
+        >
+          <CardSelected
+            selectedNumber={numberSelected}
+            optionOne={() => handleRegister('Graduação')}
+            optionTwo={() => handleRegister('Pós-Graduação')}
+            onToSave={onToSave}
+          />
+
+        </Modal>
+      )}
     </Container>
   );
 }

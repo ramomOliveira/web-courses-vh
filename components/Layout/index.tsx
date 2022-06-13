@@ -5,13 +5,14 @@ import RangeNavigation from '../RangeNavigation';
 
 interface LayoutProps {
   children?: ReactNode;
+  titlePage: string;
 }
 
-export default function Layout({ children }: LayoutProps) {
+export default function Layout({ children, titlePage }: LayoutProps) {
   return (
     <div>
       <Header />
-      <RangeNavigation />
+      <RangeNavigation titlePage={titlePage} />
       <div>
         {children}
       </div>

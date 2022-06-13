@@ -1,14 +1,18 @@
+import { ReactNode } from 'react';
 import { Container } from './style';
 
 interface ButtonProps {
-  children: string
-  disabled?: boolean
+  children: ReactNode;
+  download?: boolean
+  link?: boolean
   onClick?: () => void
 }
 
-export default function Button({ children, disabled = false, onClick }: ButtonProps) {
+export default function Button({
+  children, download, link, onClick,
+}: ButtonProps) {
   return (
-    <Container onClick={onClick} disable={disabled} type="button">
+    <Container onClick={onClick} link={link} download={download} type="button">
       {children}
     </Container>
   );

@@ -1,27 +1,36 @@
 import { useState } from 'react';
+import Link from 'next/link';
 import { Container, Navigation, CardsNavigation } from './style';
 
-export default function RangeNavigation() {
+interface IProps {
+  titlePage: string;
+}
+
+export default function RangeNavigation({ titlePage }: IProps) {
   const [selected, setSelected] = useState(0);
 
   return (
     <Container>
       <Navigation>
         <ul>
-          <li>Home</li>
+          <Link href="/">
+            <li>Home</li>
+          </Link>
           <span className="material-icons-outlined">
             chevron_right
           </span>
-          <li>
-            Cursos
-          </li>
+          <Link href="/">
+            <li>
+              Cursos
+            </li>
+          </Link>
           <span className="material-icons-outlined">
             chevron_right
           </span>
-          <li className="selected">Graduação</li>
+          <li className="selected">{titlePage}</li>
         </ul>
       </Navigation>
-      <h1>Graduação</h1>
+      <h1>{titlePage}</h1>
       <CardsNavigation>
         <div onClick={() => setSelected(0)} className={selected === 0 ? 'selected' : ''}>
           <span className="material-icons-outlined">
